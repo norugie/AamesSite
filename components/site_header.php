@@ -11,24 +11,24 @@
         <meta name="google-site-verification" content="AoSEh84a-NthX9s-5lUi7X8yrNXhh9J5LFtlncT5lJI">
 
         <!-- Primary Meta Tags -->
-        <title>Nisga'a Elementary Secondary School</title>
-        <meta name="title" content="Nisga'a Elementary Secondary School">
-        <meta name="description" content="Nisga'a Elementary Secondary School">
+        <title>Alvin A. McKay Elementary School</title>
+        <meta name="title" content="Alvin A. McKay Elementary School">
+        <meta name="description" content="Alvin A. McKay Elementary School">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="robots" content="all,follow">
 
         <!-- Open Graph / Facebook -->
         <meta property="og:type" content="website">
-        <meta property="og:url" content="https://dev-ness.nisgaa.bc.ca">
-        <meta property="og:title" content="Nisga'a Elementary Secondary School">
-        <meta property="og:description" content="Nisga'a Elementary Secondary School)">
+        <meta property="og:url" content="https://dev-aames.nisgaa.bc.ca">
+        <meta property="og:title" content="Alvin A. McKay Elementary School">
+        <meta property="og:description" content="Alvin A. McKay Elementary School)">
         <meta property="og:image" content="https://webdev.nisgaa.bc.ca/images/thumbnails/post_thumbnail.jpg">
 
         <!-- Twitter -->
         <meta property="twitter:card" content="summary_large_image">
-        <meta property="twitter:url" content="https://dev-ness.nisgaa.bc.ca">
-        <meta property="twitter:title" content="Nisga'a Elementary Secondary School">
-        <meta property="twitter:description" content="Nisga'a Elementary Secondary School">
+        <meta property="twitter:url" content="https://dev-aames.nisgaa.bc.ca">
+        <meta property="twitter:title" content="Alvin A. McKay Elementary School">
+        <meta property="twitter:description" content="Alvin A. McKay Elementary School">
         <meta property="twitter:image" content="https://webdev.nisgaa.bc.ca/images/thumbnails/post_thumbnail.jpg">
 
         <!-- Bootstrap CSS-->

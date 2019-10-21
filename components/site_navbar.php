@@ -2,8 +2,8 @@
 <?php
 
     require '../nisgaa/functions/site.php';
-    $schoolInfo = 3;
-    $schoolContent = 3;
+    $schoolInfo = 4;
+    $schoolContent = 4;
     $info = $site->siteInformation($database, $schoolInfo);
     $quick_links = $site->linkList($database, 'Quick Links', $schoolContent);
     $events = $site->eventList($database, $schoolContent);
@@ -17,7 +17,7 @@
 <!-- Navbar Start-->
 <header class="nav-holder make-sticky">
 <div id="navbar" role="navigation" class="navbar navbar-expand-lg">
-    <a href="/" class="navbar-brand home"><img src="/nisgaa-icon-banner-ness.png" alt="NESS Icon" class="d-none d-md-inline-block"><img src="/nisgaa-icon-ness.png" alt="NESS SD92 Icon" class="d-inline-block d-md-none"><span class="sr-only">NESS - go to homepage</span></a>
+    <a href="/" class="navbar-brand home"><img src="/nisgaa-icon-banner-aames.png" alt="AAMES Icon" class="d-none d-md-inline-block"><img src="/nisgaa-icon-aames.png" alt="AAMES SD92 Icon" class="d-inline-block d-md-none"><span class="sr-only">AAMES - go to homepage</span></a>
     <button type="button" data-toggle="collapse" data-target="#navigation" class="navbar-toggler btn-template-outlined"><span class="sr-only">Toggle navigation</span><i class="fa fa-align-justify"></i></button>
     <div id="navigation" class="navbar-collapse collapse">
         <ul class="nav navbar-nav ml-auto">
