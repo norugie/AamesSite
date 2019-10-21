@@ -4,7 +4,7 @@
         <div class="row">
             <!-- FOOTER ADDRESS -->
             <div class="col-lg-3 text-xs-sm-center">
-                <h4 class="h6">NISGA'A ELEMENTARY SECONDARY SCHOOL</h4>
+                <h4 class="h6">ALVIN A. MCKAY ELEMENTARY SCHOOL</h4>
                 <p class="text-uppercase"><?php echo $addr = str_replace(',', '<br>', $info['school_addr']); ?></p>
                 <hr class="d-block d-lg-none">
             </div>
@@ -37,7 +37,7 @@
     <div class="copyrights">
         <div class="row" style="padding-left: 25px; padding-right: 25px;">
             <div class="col-lg-4 text-center-md">
-                <p>&copy; 2018-2019. NESS</p>
+                <p>&copy; 2018-2019. AAMES</p>
             </div>
             <div class="col-lg-8 text-right text-center-md">
                 <p>Template design by <a href="https://bootstrapious.com/free-templates">Bootstrapious Templates </a></p>
