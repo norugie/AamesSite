@@ -25,7 +25,7 @@
                     <?php foreach($blogs as $blog): ?>
                         <div class="col-lg-3 col-md-4 col-blog-mobile">
                             <div class="home-blog-post d-none d-md-block">
-                                <div class="image"><img src="https://webdev.nisgaa.bc.ca/images/thumbnails/<?php echo $blog['post_thumbnail']; ?>" alt="..." class="img-fluid">
+                                <div class="image"><img src="https://www.nisgaa.bc.ca/images/thumbnails/<?php echo $blog['post_thumbnail']; ?>" alt="..." class="img-fluid">
                                 <div class="overlay d-flex align-items-center justify-content-center"><a href="/news/read/<?php echo preg_replace('/[a-zA-Z]/', '', $blog['post_id']); ?>" class="btn btn-template-outlined-white"><i class="fa fa-chain"> </i> Read More</a></div>
                                 </div>
                                 <div class="text">
@@ -59,7 +59,7 @@
                     <?php foreach($resources as $resource): ?>
                         <div class="col-lg-3 col-md-6 col-blog-mobile">
                             <div class="product d-none d-md-block">
-                                <div class="image"><a href="<?php if($resource['link_type'] == 'File'){ echo "/links/"; } echo $resource['link_content']; ?>" target="_blank" rel="noreferrer"><img src="https://webdev.nisgaa.bc.ca/images/thumbnails/<?php echo $resource['link_thumbnail']; ?>" alt="" class="img-fluid image1" style="max-width: 80% !important;"></a></div>
+                                <div class="image"><a href="<?php if($resource['link_type'] == 'File'){ echo "/links/"; } echo $resource['link_content']; ?>" target="_blank" rel="noreferrer"><img src="https://www.nisgaa.bc.ca/images/thumbnails/<?php echo $resource['link_thumbnail']; ?>" alt="" class="img-fluid image1" style="max-width: 80% !important;"></a></div>
                                 <div class="text">
                                     <h3 class="h5"><a href="<?php if($resource['link_type'] == 'File'){ echo "/links/"; } echo $resource['link_content']; ?>" target="_blank" rel="noreferrer"><?php echo $resource['link_name']; ?></a></h3>
                                 </div>

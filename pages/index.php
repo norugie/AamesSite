@@ -15,7 +15,7 @@
                                 <div class="owl-text-overlay d-none d-sm-block">
                                     <h2 class="owl-title d-none d-md-block"><?php echo $c['carousel_desc']; ?></h2>
                                 </div>
-                                <img class="owl-img" src="https://webdev.nisgaa.bc.ca/images/carousel/<?php echo $c['carousel_name']; ?>" alt="<?php echo $c['carousel_desc']; ?>">
+                                <img class="owl-img" src="https://www.nisgaa.bc.ca/images/carousel/<?php echo $c['carousel_name']; ?>" alt="<?php echo $c['carousel_desc']; ?>">
                             </div>
                         <?php endforeach; ?>
                     </div>
@@ -53,7 +53,7 @@
                 <ul class="list-unstyled footer-blog-list">
                     <?php foreach($blog_posts as $blog): ?>
                         <li class="d-flex align-items-center">
-                            <div class="image"><img src="https://webdev.nisgaa.bc.ca/images/thumbnails/<?php echo $blog['post_thumbnail']; ?>" alt="..." class="img-fluid"></div>
+                            <div class="image"><img src="https://www.nisgaa.bc.ca/images/thumbnails/<?php echo $blog['post_thumbnail']; ?>" alt="..." class="img-fluid"></div>
                             <div class="text">
                                 <h5 class="mb-0"> <a href="/news/read/<?php echo preg_replace('/[a-zA-Z]/', '', $blog['post_id']); ?>"><?php echo $blog['post_title']; ?></a></h5>
                             </div>
