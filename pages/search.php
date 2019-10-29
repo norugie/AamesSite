@@ -48,7 +48,7 @@
     </section>
     
     <!-- RESOURCES RESULTS CONTENT -->
-    <section>
+    <!-- <section>
         <div class="row">
             <div class="col-md-12">
                 <div class="heading">
@@ -72,5 +72,5 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 </div>
