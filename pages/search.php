@@ -23,18 +23,8 @@
                 <?php if(count($blogs) < 1){ ?><p class="lead">No school news posts found for keyword: <?php echo $keyword; ?></p><?php } ?>
                 <div class="row">
                     <?php foreach($blogs as $blog): ?>
-                        <div class="col-lg-3 col-md-4 col-blog-mobile">
-                            <div class="home-blog-post d-none d-md-block">
-                                <div class="image"><img src="https://www.nisgaa.bc.ca/images/thumbnails/<?php echo $blog['post_thumbnail']; ?>" alt="..." class="img-fluid">
-                                <div class="overlay d-flex align-items-center justify-content-center"><a href="/news/read/<?php echo preg_replace('/[a-zA-Z]/', '', $blog['post_id']); ?>" class="btn btn-template-outlined-white"><i class="fa fa-chain"> </i> Read More</a></div>
-                                </div>
-                                <div class="text">
-                                    <h4><a href="/news/read/<?php echo preg_replace('/[a-zA-Z]/', '', $blog['post_id']); ?>"><?php echo $blog['post_title']; ?></a></h4>
-                                    <p class="author-category">By <?php echo $blog['firstname'] . " " . $blog['lastname']; ?></p>
-                                    <p class="author-category"><?php echo date_format(date_create($blog['post_date']), 'd M Y'); ?></p>
-                                </div>
-                            </div>
-                            <ul class="d-block d-md-none d-lg-none">
+                        <div class="col-lg-6 col-md-6 col-blog-mobile">
+                            <ul class="d-block">
                                 <li class="lead mb-0">
                                     <a href="/news/read/<?php echo preg_replace('/[a-zA-Z]/', '', $blog['post_id']); ?>"><?php echo $blog['post_title']; ?></a>
                                     <p class="author-category">By <?php echo $blog['firstname'] . " " . $blog['lastname']; ?> | <?php echo date_format(date_create($blog['post_date']), 'd M Y'); ?></p>
