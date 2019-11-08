@@ -8,7 +8,7 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="heading">
-                    <h2>Alvin A. McKay Elementary School</h2>
+                    <h2><?php echo $info['school_name']; ?></h2>
                 </div>
                 <p class="lead"><?php echo $about['web_desc']; ?></p>
             </div>

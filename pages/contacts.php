@@ -18,7 +18,7 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="heading">
-                    <h2>AAMES Contacts</h2>
+                    <h2><?php echo $info['school_abbv']; ?> Contacts</h2>
                 </div>
                 <div class="row text-center">
                     <?php foreach($contacts as $contact): ?>

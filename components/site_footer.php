@@ -4,7 +4,7 @@
         <div class="row">
             <!-- FOOTER ADDRESS -->
             <div class="col-lg-3 text-xs-sm-center">
-                <h4 class="h6">ALVIN A. MCKAY ELEMENTARY SCHOOL</h4>
+                <h4 class="h6"><?php echo $info['school_name']; ?></h4>
                 <p class="text-uppercase"><?php echo $addr = str_replace(',', '<br>', $info['school_addr']); ?></p>
                 <hr class="d-block d-lg-none">
             </div>
