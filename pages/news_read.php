@@ -21,8 +21,8 @@
             <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
                 <div class="box-image">
                     <center>
-                        <a href="https://www.nisgaa.bc.ca/images/posts/media/<?php echo $mi['media_name']; ?>" data-sub-html="<?php echo $post_info['post_title']; ?>">
-                            <img class="img-fluid thumbnail" src="https://www.nisgaa.bc.ca/images/posts/media/<?php echo $mi['media_name']; ?>" style="height: 180px!important; object-fit: cover!important;">
+                        <a href="/images/posts/media/<?php echo $mi['media_name']; ?>" data-sub-html="<?php echo $post_info['post_title']; ?>">
+                            <img class="img-fluid thumbnail" src="/images/posts/media/<?php echo $mi['media_name']; ?>" style="height: 180px!important; object-fit: cover!important;">
                         </a>
                     </center>
                 </div>

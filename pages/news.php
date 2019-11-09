@@ -32,7 +32,7 @@
                 <section class="post">
                     <div class="row">
                         <div class="col-md-3">
-                            <div class="image"><a href="/news/read/<?php echo preg_replace('/[a-zA-Z]/', '', $blog['post_id']); ?>"><img src="https://www.nisgaa.bc.ca/images/thumbnails/<?php echo $blog['post_thumbnail']; ?>" alt="..." class="img-fluid"></a></div>
+                            <div class="image"><a href="/news/read/<?php echo preg_replace('/[a-zA-Z]/', '', $blog['post_id']); ?>"><img src="/images/thumbnails/<?php echo $blog['post_thumbnail']; ?>" alt="..." class="img-fluid"></a></div>
                         </div>
                         <div class="col-md-9">
                             <h2 class="h3 mt-0 blog-title-mobile"><a href="/news/read/<?php echo preg_replace('/[a-zA-Z]/', '', $blog['post_id']); ?>"><?php echo $blog['post_title']; ?></a></h2>
