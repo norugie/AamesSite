@@ -15,7 +15,7 @@
                                 <div class="owl-text-overlay d-none d-sm-block">
                                     <h2 class="owl-title d-none d-md-block"><?php echo $c['carousel_desc']; ?></h2>
                                 </div>
-                                <img class="owl-img" src="https://www.nisgaa.bc.ca/images/carousel/<?php echo $c['carousel_name']; ?>" alt="<?php echo $c['carousel_desc']; ?>">
+                                <img class="owl-img" src="/images/carousel/<?php echo $c['carousel_name']; ?>" alt="<?php echo $c['carousel_desc']; ?>">
                             </div>
                         <?php endforeach; ?>
                     </div>
