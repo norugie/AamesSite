@@ -4,7 +4,7 @@
 /images/thumbnails/*
 /images/carousel/*
 /source/*
-/thumbs/*
+/links/*
 /feed.php
 
 # Folder exceptions
@@ -13,8 +13,7 @@
 !/images/thumbnails/.gitkeep
 !/images/carousel/.gitkeep
 !/source/.gitkeep
-!/thumbs/.gitkeep
+!/links/.gitkeep
 
 # File Exceptions
 !/images/thumbnails/post_thumbnail.jpg
-
