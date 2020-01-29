@@ -1,5 +1,6 @@
 <?php 
     require '../nisgaa/functions/security_headers.php';
+    require '../nisgaa/functions/site.php';
 ?>
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
@@ -10,26 +11,40 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="google-site-verification" content="AoSEh84a-NthX9s-5lUi7X8yrNXhh9J5LFtlncT5lJI">
 
+        <?php
+
+            if(isset($url[2]) && !empty($url[2]) && $page_name == 'news' && $url[1] != 'category'){
+                $tag = $site->postInformation($database, $url[2]);
+                $tag_title = $tag['post_title'];
+                $tag_desc = $tag['post_desc'];
+                $tag_image = "https://www.nisgaa.bc.ca/images/thumbnails/".$tag['post_thumbnail'];
+            } else {
+                $tag_title = "Alvin A. McKay Elementary School";
+                $tag_desc = "Alvin A. McKay Elementary School";
+                $tag_image = "https://www.nisgaa.bc.ca/images/thumbnails/post_thumbnail.jpg";
+            }
+
+        ?>
+
         <!-- Primary Meta Tags -->
-        <title>Alvin A. McKay Elementary School</title>
-        <meta name="title" content="Alvin A. McKay Elementary School">
-        <meta name="description" content="Alvin A. McKay Elementary School">
+        <title><?php echo trim($tag_title); ?></title>
+        <meta name="type" content="article">
+        <meta name="title" content="<?php echo trim($tag_title); ?>">
+        <meta name="description" content="<?php echo trim($tag_desc); ?>">
+        <meta name="url" content="https://aames.nisgaa.bc.ca">
+        <meta property="image" content="<?php echo trim($tag_image); ?>">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="robots" content="all,follow">
 
         <!-- Open Graph / Facebook -->
-        <meta property="og:type" content="website">
-        <meta property="og:url" content="https://aames.nisgaa.bc.ca">
-        <meta property="og:title" content="Alvin A. McKay Elementary School">
-        <meta property="og:description" content="Alvin A. McKay Elementary School)">
-        <meta property="og:image" content="https://www.nisgaa.bc.ca/images/thumbnails/post_thumbnail.jpg">
+        <meta property="og:image" content="<?php echo $tag_image; ?>">
 
         <!-- Twitter -->
         <meta property="twitter:card" content="summary_large_image">
         <meta property="twitter:url" content="https://aames.nisgaa.bc.ca">
-        <meta property="twitter:title" content="Alvin A. McKay Elementary School">
-        <meta property="twitter:description" content="Alvin A. McKay Elementary School">
-        <meta property="twitter:image" content="https://www.nisgaa.bc.ca/images/thumbnails/post_thumbnail.jpg">
+        <meta property="twitter:title" content="<?php echo $tag_title; ?>">
+        <meta property="twitter:description" content="<?php echo $tag_desc; ?>">
+        <meta property="twitter:image" content="<?php echo $tag_image; ?>">
 
         <!-- Bootstrap CSS-->
         <link rel="stylesheet" href="/plugins/bootstrap-v4/css/bootstrap.min.css">
