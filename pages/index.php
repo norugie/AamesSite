@@ -14,7 +14,7 @@
                             <div>
                                 <?php if(isset($c['carousel_desc']) && !empty($c['carousel_desc'])){ ?>
                                     <div class="owl-text-overlay d-none d-sm-block">
-                                        <h3 class="owl-title d-none d-md-block"><?php echo $c['carousel_desc']; ?></h3>
+                                        <h3 class="owl-title d-none m-0 d-md-block" style="padding:5px;"><?php echo $c['carousel_desc']; ?></h3>
                                     </div>
                                 <?php } ?>
                                 <img class="owl-img" src="/images/carousel/<?php echo $c['carousel_name']; ?>" alt="<?php echo $c['carousel_desc']; ?>">
@@ -65,7 +65,7 @@
                 </ul>
               <hr class="d-block d-lg-none">
             </div>
-            <div class="col-lg-4 with-border">
+            <!-- <div class="col-lg-3 with-border">
                 <h4 class="h5 text-center">UPCOMING EVENTS</h4>
                 <ul class="list-unstyled footer-blog-list">
                     <?php if(count($events) < 1){ ?><li class="d-flex align-items-center"><div class="text"><h5 class="mb-0">No upcoming events available</h5></div></li><?php } ?>
@@ -91,6 +91,19 @@
                     <?php endforeach; ?>
                 </ul>
               <hr class="d-block d-lg-none">
+            </div> -->
+            <div class="col-lg-4 with-border">
+                <h4 class="h5 text-center">IMPORTANT COVID-19 UPDATES</h4>
+                <ul class="list-unstyled footer-blog-list">
+                    <li class="d-flex align-items-center mb-0">
+                        <div class="text">
+                            <p class="text-center" style="font-size: 13px!important;">Refer to the links below for COVID-19 updates from the Ministry and the District</p>
+                            <h5 class="h5"><a href="/covid_ministry">COVID-19 Updates from the Ministry</a></h5>
+                            <h5 class="h5"><a href="/covid_district">COVID-19 Updates from SD92</a></h5>
+                        </div>
+                    </li>
+                </ul>
+              <hr class="d-block d-lg-none">
             </div>
             <div class="col-lg-4 with-border">
                 <?php $word = $site->weeklyWord($database); ?>
@@ -98,8 +111,8 @@
                 <hr>
                 <h4 class="text-center" style="font-family: sans-serif!important; font-size: 18px!important;"><?php echo $word['word']; ?></h4>
                 <hr>
-                <p class="lead text-center mb-0" style="font-size: 16px;">"<?php echo $word['word_meaning']; ?>"</p>
-                <p class="intro text-center"><i><?php echo $word['form']; ?></i></p>
+                <p class="lead text-center mb-2" style="font-size: 16px;">"<?php echo $word['word_meaning']; ?>"</p>
+                <h5 class="h5 text-center">Learn more about the Nisga'a language at <a href="https://www.youtube.com/channel/UCQTuOdHLEa2RSM56I5vvoFg"><u>Sim'algax 101</u></a>.</h5>
             </div>
         </div>
     </div>

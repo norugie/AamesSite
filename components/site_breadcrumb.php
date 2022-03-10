@@ -11,6 +11,10 @@
         $breadcrumb = "Contact us";
     } else if($page_name == 'search'){
         $breadcrumb = "Search Results";
+    } else if($page_name == 'covid_district'){
+        $breadcrumb = "COVID-19 Updates from SD92";
+    } else if($page_name == 'covid_ministry'){
+        $breadcrumb = "COVID-19 Updates from the Ministry";
     } else {
         $breadcrumb = str_replace('_', ' ', $page_name);
     }
